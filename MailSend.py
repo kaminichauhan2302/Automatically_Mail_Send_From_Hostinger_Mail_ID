@@ -41,8 +41,8 @@ def send_email(to_email, name, subject, body, from_email, password, attachment_p
         print(f"Failed to send email to {name} at {to_email}. Error: {e}")
 
 # Your email credentials
-from_email = "kamini.chauhan@akiyam.in"
-password = "Kamini@24344"
+from_email = "kamini@gmail.com"
+password = "Kamini24344"
 
 # Read the Excel sheet
 excel_file = r'C:\Users\Dell\OneDrive\Desktop\File1.xlsx'
@@ -69,4 +69,5 @@ else:
         send_email(to_email, name, subject, body, from_email, password, attachment_path)
 
     print("Emails sent successfully!")
+
 
