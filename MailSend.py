@@ -54,33 +54,9 @@ if not required_columns.issubset(df.columns):
     print(f"Excel file must contain the following columns: {required_columns}")
 else:
     # Email content
-    subject = "Request from Akiyam Solutions Pvt. Ltd."
+    subject = "Write mail subject here.."
     body = """
-    Dear {name},
-    I trust this message finds you well. My name is Kamini Chauhan, and I am writing to introduce you to an exceptional investment opportunity with Akiyam Solutions Pvt. Ltd., a pioneering gaming and technology services company based in India.
-    Our company has made significant strides in the gaming industry, notably with our first FPS PC game, Assassin - The First List, which is available on both Steam and Epic Games. Building on this success, we are now poised to launch our next major project, Beyonders, a mobile game designed to engage and captivate a global audience. Beyond our gaming ventures, Akiyam Solutions Pvt. Ltd. offers a comprehensive suite of technology services. Our expertise spans several critical areas, including Web Development, SEO, Data Science, AR/VR, Machine Learning, and DevOps. Our proficiency in key technologies includes:
-
-    Frontend and Cloud: React, Angular, AWS, Azure
-    Backend: Java, Dotnet, NodeJS
-    Mobile: React Native, Flutter, Xamarin, iOS, Android
-    Platform: Power Platform, SharePoint, WordPress, Magento, Drupal
-
-    We believe that our diversified service offerings, combined with our innovative gaming projects, position us as a leading player in the tech industry. We are confident that, with your investment, Akiyam Solutions Pvt. Ltd. can achieve unprecedented growth and success.
-    We would welcome the opportunity to discuss this investment proposal in more detail and explore how we can achieve mutual success. We are also keen to introduce you to our company, products, business model, marketing strategy, and address any questions you may have. Please let us know a convenient time for a meeting or call.
-
-    Thanks for your valuable time.
-
-    Best Regards,
-    Kamini Chauhan 
-    Akiyam Solutions Pvt. Ltd.
-
-    Phone: 0265 461 4248
-    Email: kamini.chauhan@akiyam.in
-    LinkedIn: Akiyam Solutions
-    Instagram: Akiyam Solutions
-    X (formerly Twitter): Akiyam Solutions
-    Facebook: Akiyam Solutions
-    Office Address = SF-16, Dwarkesh High view, Near Susen - Tarsali Ring Rd, NH No. 8, Tarsali, Vadodara, Gujarat 390009
+    Mail Content
     """
 
     # Path to the attachment file (use absolute path)
@@ -93,3 +69,4 @@ else:
         send_email(to_email, name, subject, body, from_email, password, attachment_path)
 
     print("Emails sent successfully!")
+
